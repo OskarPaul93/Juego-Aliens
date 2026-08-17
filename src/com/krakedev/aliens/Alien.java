@@ -27,6 +27,27 @@ public class Alien {
 		this.precioExtremidad = this.tamanio * 0.10;
 		this.precioOjo = this.tamanio * 0.05;
 	}
+	
+	
+	public boolean agregarBrazos(int cantidad) {
+
+		if (numeroBrazos + numeroPies + cantidad <= 10) {
+			numeroBrazos += cantidad;
+			return true;
+		}
+
+		return false;
+	}
+	
+	public boolean agregarPiernas(int cantidad) {
+
+		if (numeroBrazos + numeroPies + cantidad <= 10) {
+			numeroPies += cantidad;
+			return true;
+		}
+
+		return false;
+	}
 		
 		
 		public int getTamanio() {
