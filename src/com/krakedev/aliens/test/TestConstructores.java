@@ -10,7 +10,7 @@ public class TestConstructores {
 		
 		a1.agregarBrazos(2);
 		a1.agregarPiernas(2);
-		a1.agregarOjos(4);
+		a1.agregarOjos(3);
 
 		System.out.println("******Caracteristica Alien 1*******");
 		a1.imprimir();
