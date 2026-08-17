@@ -11,8 +11,6 @@ public class Alien {
 	private double precioCuerpo;
 
 	public Alien(int tamanio, String color) {
-		this.tamanio = tamanio;
-		this.color = color;
 		
 		if (tamanio < 5) {
 			tamanio = 5;
@@ -21,6 +19,9 @@ public class Alien {
 		if (tamanio > 30) {
 			tamanio = 30;
 		}
+		
+		this.tamanio = tamanio;
+		this.color = color;
 
 		this.precioCuerpo = this.tamanio * 0.20;
 		this.precioExtremidad = this.tamanio * 0.10;
